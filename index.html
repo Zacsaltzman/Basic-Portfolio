@@ -3,53 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Basic Portfolio Index</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 	
 	<div>
-	<header>
-		<h1>Zachary Saltzman</h1>
+	<header class="Header">
+		<h1 class="Name">Zachary Saltzman</h1>
 
-		<nav>
-			<a href="#">About</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
+		<nav class="Nav">
+			<a href="index.html" class="About">About</a>
+			<a href="portfolio.html" class="Portfolio">Portfolio</a>
+			<a href="contact.html" class="Contact">Contact</a>
 		</nav>
 	</header>
 
 	</div>
 
-	<div>
-	<section>
+	<div class="ContentDiv">
+	<section class="AboutMeSection">
 
-		<h2>About Me</h2>
+		<h2 class="AboutMeTitle">About Me</h2>
 
-		<img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/ProfilePic.jpeg" height="300" alt="Zachary Saltzman">
 
+		<div class="AboutMeText">
 		<p>
+		<img src="assets/images/ProfilePic.jpeg" height="200" alt="Zachary Saltzman" class="AboutMeImage" align="left">
 			Zachary Saltzman is a post-production artist and developer based in South Florida.  He graduated from the School of Visual Arts with a degree in Computer Art, Computer Animation, and Visual Effects.  He also studied coding through the UCF Coding Boot Camp.
 		</p>
 		<p>
 			Zac has worked on commercials for major companies such as Pepsi, Fisher Price, and Lipton Tea.  He has also done local work for the city of Delray, Arts Garage, and Millenial Group.  He is excited to start a career as a developer as well.
 		</p>
+		</div>
 
 	</section>
 	</div>
 
 	<div>
-	<aside>
+	<aside class="SideBar">
 		
-		<h3>Connect with Me</h3>
+		<h3 class="ConnectTitle">Connect with Me</h3>
 
-		<a href="https://github.com/Zacsaltzman" target="_blank"><img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/GitHubIcon.png" alt="GitHub" height="100"></a>
-		<a href="https://www.linkedin.com/in/zachary-saltzman-539417125/" target="_blank"><img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/LinkedInIcon.png" alt="LinkedIn" height="100"></a>
-		<a href="https://stackexchange.com/users/10631019/zac-saltzman" target="_blank"><img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/StackOverflowIcon.png" alt="Stack Overflow" height="100"></a>
+		<a href="https://github.com/Zacsaltzman" target="_blank"><img src="assets/images/GitHubIcon.png" alt="GitHub" height="75"></a>
+		<a href="https://www.linkedin.com/in/zachary-saltzman-539417125/" target="_blank"><img src="assets/images/LinkedInIcon.png" alt="LinkedIn" height="75"></a>
+		<a href="https://stackexchange.com/users/10631019/zac-saltzman" target="_blank"><img src="assets/images/StackOverflowIcon.png" alt="Stack Overflow" height="75"></a>
 
 	</aside>
 	</div>
 
-	<div>
-		<footer>
+	<div class="FooterWrapper">
+		<footer class="Footer">
 			<p>
 				© Copyright 2017 Zachary Saltzman
 			</p>

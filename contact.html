@@ -2,53 +2,62 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Basic Portfolio Contact</title>
+	<title>Basic Portfolio Index</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 	
 	<div>
-	<header>
-		<h1>Zachary Saltzman</h1>
+	<header class="Header">
+		<h1 class="Name">Zachary Saltzman</h1>
+
+		<nav class="Nav">
+			<a href="index.html" class="About">About</a>
+			<a href="portfolio.html" class="Portfolio">Portfolio</a>
+			<a href="contact.html" class="Contact">Contact</a>
+		</nav>
 	</header>
 
-	<nav>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Contact</a>
-	</nav>
 	</div>
 
-	<div>
-	<section>
+	<div class="ContactDiv">
+	<section class="ContactSection">
 
-		<h2>Contact</h2>
-		<hr>
+		<h2 class="ContactTitle">Contact</h2>
 
-		<form action="/action_page.php">
-		Name <input type="text" name="Name" value="John Smith"><br>
-		Email <input type="text" name="Email" value="example@gmail.com"><br>
-		Message <input type="text" name="Message"><br>
-		<input type="submit" value="Submit">
-		</form>
+		Name
+		<br>
+		<textarea name="NameTextArea" id="NameBox" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')">John Smith</textarea>
+		Email
+		<br>
+		<textarea name="EmailTextArea" id="EmailBox" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')">example@gmail.com</textarea>
+		<br>
+		Message
+		<br>
+		<textarea name="MessageTextArea" id="MessageBox" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')"></textarea>
+		<br>
+		<!--<input type="submit" value="Submit" class="SubmitBox">-->
+		<button type="button" onclick="alert('Thank You')" class="SubmitButton">Submit</button>
 
 	</section>
 	</div>
 
 	<div>
-	<aside>
+	<aside class="SideBar">
 		
-		<h3>Connect with Me</h3>
-		<hr>
+		<h3 class="ConnectTitle">Connect with Me</h3>
 
-		<a href="https://github.com/Zacsaltzman" target="_blank"><img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/GitHubIcon.png" alt="GitHub" height="100"></a>
-		<a href="https://www.linkedin.com/in/zachary-saltzman-539417125/" target="_blank"><img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/LinkedInIcon.png" alt="LinkedIn" height="100"></a>
-		<a href="https://stackexchange.com/users/10631019/zac-saltzman" target="_blank"><img src="/Users/zsaltzman/Desktop/UCF_Assignments/Basic-Portfolio/assets/images/StackOverflowIcon.png" alt="Stack Overflow" height="100"></a>
+		<a href="https://github.com/Zacsaltzman" target="_blank"><img src="assets/images/GitHubIcon.png" alt="GitHub" height="75"></a>
+		<a href="https://www.linkedin.com/in/zachary-saltzman-539417125/" target="_blank"><img src="assets/images/LinkedInIcon.png" alt="LinkedIn" height="75"></a>
+		<a href="https://stackexchange.com/users/10631019/zac-saltzman" target="_blank"><img src="assets/images/StackOverflowIcon.png" alt="Stack Overflow" height="75"></a>
 
 	</aside>
 	</div>
 
-	<div>
-		<footer>
+	<div class="FooterWrapper">
+		<footer class="Footer">
 			<p>
 				© Copyright 2017 Zachary Saltzman
 			</p>
